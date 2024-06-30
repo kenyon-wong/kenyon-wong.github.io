@@ -11,14 +11,6 @@ export default defineConfig({
     nav: [
       { text: "主页", link: '/' },
       {
-        text: "关于文库",
-        items: [
-          { text: '文库介绍', link: '/about/' },
-          { text: '支持项目', link: '/about/support' },
-          { text: '使用指南', link: "/about/使用指南" },
-        ]
-      },
-      {
         text: "web安全",
         items: [
           { text: "基础篇",  link: '/web/basis/'},
@@ -30,52 +22,7 @@ export default defineConfig({
           { text: "SRC", link: '/web/SRC/'}
         ]
       },
-      {
-        text: "区块链",
-        items: [
-          { text: "区块链入门",  link: '/blockchain/'},
-          { text: "区块链市场", link: '/blockchain/transaction'},
-          { text: "区块链安全", link: '/blockchain/bug/'}       
-        ]
-      },
-      {
-        text: "红蓝对抗",
-        items: [
-            { text: "流量隐匿", link: "/redteam/流量隐匿/"},
-            { text: "免杀对抗", link: "/redteam/免杀对抗/"}
-          ]
-      },     
-      {
-        text: 'CTF',
-        items: [
-            { text: "Misc", link: "/ctf/Misc/"},
-            { text: "Web", link: "/ctf/Web/"},
-            { text: "Pwn", link: "/ctf/Pwn/"},
-            { text: "Crypto", link: "/ctf/Crypto/"},
-            { text: "Reverse", link: "/ctf/Reverse/"}
-          ],
-        },
-      {
-        text: '友情链接',
-        items: [
-          { text: "合作伙伴", link: "/cooperation/friend/"},
-          { text: "安全项目", link: "/cooperation/recruit/"},
-          { text: "开源项目", link: "/cooperation/project/"},
-          { text: "自用黑科技", link: "/cooperation/hacking/"}
-        ],
-      }
     ],
-    sidebar:  {
-      '/about/': [
-        {
-          text: '关于文库',
-          items: [
-            { text: '文库介绍', link: '/about/' },
-            { text: '支持项目', link: '/about/support' },
-            { text: '使用指南', link: "/about/使用指南" },  
-          ]
-        }
-      ],
       '/web/basis/': [
         {
           text: '基础篇',
@@ -91,15 +38,6 @@ export default defineConfig({
             { text: 'Linux提权总结', link: "/web/basis/Linux提权总结" },
             { text: '反弹shell备忘录', link: "/web/basis/反弹shell备忘录" },
             { text: 'JAVA内存马研究0到1', link: "/web/basis/JAVA内存马研究0到1" }
-          ]
-        }
-      ],
-      '/web/emer/': [
-        {
-          text: '应急响应篇',
-          items: [
-            { text: '安全加固指南', link: "/web/emer/linux&windows应急响应" },
-            { text: 'linux&windows应急响应', link: "/web/emer/linux&windows应急响应" }
           ]
         }
       ],
@@ -149,27 +87,6 @@ export default defineConfig({
           ]
         }
       ],
-
-      '/blockchain/': [
-        {
-          text: '区块链',
-          items: [
-            { text: "区块链入门",  link: '/blockchain/'},
-            { text: "区块链市场", link: '/blockchain/transaction'},
-            { text: "区块链安全", link: '/blockchain/bug/'}             
-          ]
-        }
-      ],
-      '/blockchain/bug/': [
-        {
-          text: '区块链安全',
-          items: [
-            { text: "常见攻击手法详解",  link: '/blockchain/bug/常见攻击手法详解'},
-            { text: "历史攻击手法案例", link: '/blockchain/bug/历史攻击手法案例'},
-            { text: "待完善", link: '/blockchain/bug/待完善'}             
-          ]
-        }
-      ],
       '/redteam/流量隐匿/': [      
       {
         text: "流量隐匿",
@@ -188,25 +105,6 @@ export default defineConfig({
           ]
       }
     ],
-    '/cooperation/project/': [      
-      {
-        text: "开源项目",
-        items: [
-            { text: "NGCBot", link: "/cooperation/project/NGCBot"},
-            { text: "ckcsecwiki", link: "/cooperation/project/ckcsecwiki"},
-          ]
-      }
-    ],
-    '/cooperation/recruit/': [      
-      {
-        text: "安全项目",
-        items: [
-            { text: "2024国护招聘", link: "/cooperation/recruit/2024国护招聘"},
-            { text: "安全实习生招聘", link: "/cooperation/recruit/安全实习生招聘"},
-            { text: "驻场安全服务工程师", link: "/cooperation/recruit/驻场安全服务工程师"},           
-          ]
-      }
-    ],
     },
     search: {
       provider: 'local'
@@ -219,7 +117,7 @@ export default defineConfig({
     },
     footer: {
       message: '基于 MIT 许可发布',
-      copyright: 'Copyright © 2021-2024 <a href="http://beian.miit.gov.cn/">鄂公网安备 42108302000084号</a>'
+      copyright: 'Copyright © 2024'
     }
   }
 })
