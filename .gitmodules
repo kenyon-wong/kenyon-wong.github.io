@@ -1,0 +1,6 @@
+[submodule "blogs"]
+	path = blogs
+	url = git@github.com:kenyon-wong/blogs.git
+[submodule "docs"]
+	path = docs
+	url = git@github.com:kenyon-wong/docs.git
